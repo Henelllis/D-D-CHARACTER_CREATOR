@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+
   render() {
+
+    let routes = (
+      <Switch>
+        <Route path='/'/>
+        <Route path='/Points_Buy_In'/> 
+        <Route path='/Player Race'/>
+        <Route path='/Character Background'/>
+        <Route path='Pick Your Class'/>     
+      </Switch>
+    ) 
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <header>
         </header>
+        {/* sideBar */}
+           {routes}
+         <footer />
+         trailer       
       </div>
     );
   }
