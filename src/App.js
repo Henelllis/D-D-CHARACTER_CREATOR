@@ -3,6 +3,8 @@ import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
+import './components/SideBar';
+import SideBar from './components/SideBar';
 
 class App extends Component {
 
@@ -21,12 +23,12 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
+        <header className="header_container">
+          header
         </header>
-        {/* sideBar */}
+        <SideBar />
            {routes}
          <footer />
-         trailer       
       </div>
     );
   }
