@@ -30,8 +30,21 @@
   top:0;
   left:0;
   width: 10rem;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 /* --------------------------------------- */
 /* SIDE BAR END */
 /* --------------------------------------- */
+
+/* --------------------------------------- */
+/* POINTS BUY IN  */
+/* --------------------------------------- */
+
+.points_buy_in_screen{
+  background-color: blue;
+}
