@@ -23,9 +23,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <SideBar />
-           {routes}
+          <div className="app_layout">
+            <SideBar />
+            {routes}
          <footer />
+        </div>
       </div>
     );
   }

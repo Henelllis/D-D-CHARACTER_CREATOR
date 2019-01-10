@@ -9,7 +9,12 @@ class PointsBuyScreen extends Component{
     render(){
         return(
             <div className="points_buy_in_screen">
-                BUY SOME POINTS YOU DINGUS
+                <div className="points_left_container">
+                    yo man
+                </div>
+                <div className="points_right_container">
+                    tell me
+                </div>
             </div>
         )
     }

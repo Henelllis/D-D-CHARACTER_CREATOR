@@ -8,6 +8,17 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
 }
+
+.app_layout{
+  display: flex;
+}
+
+.right_screen {
+  top:0;
+  left:10rem;
+  width: 10rem;
+  height:100%;  
+}
 /* --------------------------------------- */
 /* HEADER START */
 /* --------------------------------------- */
@@ -17,6 +28,7 @@
 
 }
 
+
 /* --------------------------------------- */
 /* HEADER END */
 /* --------------------------------------- */
@@ -25,12 +37,14 @@
 /* --------------------------------------- */
 
 .sidebar_container{
-  background-color: brown;
-  position: fixed;
+  background-color: rgb(236, 175, 175);
+  height: 100vh;
+
+  /* position: fixed;
   top:0;
   left:0;
   width: 10rem;
-  height:100%;
+  height:100%; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -46,5 +60,21 @@
 /* --------------------------------------- */
 
 .points_buy_in_screen{
+  min-height: 100%;
+  width: 100vw;
+  display: flex;
   background-color: blue;
+}
+
+
+.points_left_container{
+  background-color: orange;
+  margin: 3rem 1rem;
+  width: 30%;
+}
+
+.points_right_container{
+  background-color: orange;
+  margin: 3rem 1rem;
+  width: 60%;
 }
